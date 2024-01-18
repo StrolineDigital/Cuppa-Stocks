@@ -1,0 +1,247 @@
+/* ___Custom color scheme___
+
+dark gray #363636 (Use Bulma classes  -dark)
+light putty #f5f5f5 (Use Bulma classes  -light)
+sky blue #bed5f7 (define as custom variable)
+teal dark #72A0C0 (define as custom variable)
+sky blue storm #697eab (define as custom variable)
+
+*/
+
+:root {
+    --coffee: #8c6849;
+    --wheat: #eadece;
+    --wheat-dark: #b9a589;
+    --copper: #db842c;
+    --corn: #fff691;
+    --corn-dark: #d9cd23;
+    --oil: #523909;
+    --sky-blue: #bed5f7;
+    --teal-dark: #72A0C0;
+    --sky-blue-storm: #697eab; 
+        text-align: center;
+    }
+    
+
+.default-hide {
+    display: none;
+}
+
+
+.show {
+    display: block;
+}
+
+
+li span {
+    color: black;
+}
+li.is-active span {
+    color: white;
+}
+   
+#tab-holder li {
+        background-color: white;
+    }
+
+#tab-holder li.is-active.coffee {
+        background-color: var(--coffee);
+    }
+
+#tab-holder li.is-active.wheat {
+    background-color: var(--wheat-dark);
+}
+
+#tab-holder li.is-active.corn {
+    background-color: var(--corn-dark);
+}
+
+#tab-holder li.is-active.copper {
+    background-color: var(--copper);
+}
+
+#tab-holder li.is-active.oil {
+    background-color: var(--oil);
+}
+
+.tabs.is-boxed li.is-active a {
+        background:none;
+}
+
+    .is-active.coffee {
+        background-color:  var(--coffee);
+    }
+
+    .is-active.wheat {
+        background-color:  var(--wheat-dark);
+    }
+
+    .is-active.copper {
+        background-color:  var(--copper);
+    }
+
+    .is-active.corn {
+        background-color:  var(--corn-dark);
+    }
+    
+    .is-active.oil {
+        background-color: var(--oil);
+    }
+
+    span.icon {
+        
+    }
+
+    #commodity-price-display {
+        margin: 0;
+    }
+    
+    #coffee-price-display, #wheat-price-display, #copper-price-display, #corn-price-display, #oil-price-display {
+        background-image: url(../images/analytics-graph.png);
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        margin-top: 0 !important;
+    }
+
+    #links {
+        background-image: url(../images/links-bg.png);
+        background: linear-gradient(to bottom, #eadece, #fff);
+        background-position-y: center;
+        background-repeat:no-repeat;
+        border-color: white;
+        border-style: solid;
+        border-width: 5px;
+        max-height:fit-content;
+    }
+    
+    /*Text color in the tabs*/
+    
+
+    
+    img.icon-overlay {
+      opacity: 0.5;
+    }
+    
+    img.shrink {
+        max-width: 50%;
+    }
+    
+    table {
+       margin-top:1.5em;
+       padding: .5em !important;
+    }
+
+    td {
+        padding: .1em;
+    }
+
+    table tr {
+        font-weight:500;
+        font-size: 85%;
+       }
+
+    table tr:first-child {
+       font-weight:700;
+       font-size: 100%;
+      }
+    
+    
+     /*Override the background color of the active tab*/
+    .tabs.is-tab .is-active .coffee {
+        background-color:var(--coffee); 
+    }
+      
+      
+       Override the text color of the inactive tabs
+      .tabs.is-tab li:not(.is-active) a {
+        color: #0000ff; 
+      }
+      
+    
+    body .columns {
+        margin: 1em; 
+        padding: .5em; 
+       /* background-color: var(--sky-blue); */
+    }
+    
+    
+    .columns {
+        padding: .5em !important;
+        margin: 1 !important;
+       /* background-color: var(--sky-blue-storm);*/
+    }
+    
+    .container {
+        width:100%;
+    }
+    img.size-overide {
+          max-width: 50%;
+    }
+    
+    header.container, main.container {
+        margin:0;
+    }
+    
+    /* ___Text Styles___  */
+    
+    
+    p {
+       text-align: center;
+    }
+    
+    .story p {
+        text-align: left;
+    }
+    
+    h1.newsreader {
+      font-family: "Newsreader", serif;
+      font-optical-sizing: auto;
+      font-size: 150%;
+      font-weight: 200;
+      font-style: normal;
+    }
+    
+    .testing {
+        border-style: solid;
+        border-color:rgb(56, 4, 4);
+        border-width: 2px;
+    }
+    
+    #current-day {
+        font-family: "Newsreader", serif;
+        border-top: solid 2px var(--sky-blue-storm);
+        border-bottom: solid 2px var(--sky-blue-storm);
+    }
+
+    /* Custom class for styling index numbers */
+  .number {
+    font-size: 50px; 
+}
+
+#favorite {
+    font-size: 30px; 
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+    
+    
+
+    /* ___Layout___  */
+    
+
+   /*  #story-bucket {
+        display: block;
+    }
+    */
+
+
